@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Put your description here.">
+  <base href="/">
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #ededed;
+    }
+    /* form-element{
+      max-width: 50%;
+      display: inline-block;
+      position: absolute;
+      top: 30%;
+      left: 10%;
+    }
+    card-element{
+      max-width: 50%;
+      display: inline-block;
+      position: absolute;
+      top: 20%;
+      left: 60%;
+    } */
+    card-element{
+      margin: 20px;
+    }
+
+    
+
+    .main{
+      display: grid;
+      grid-template-areas: 
+      'form card';
+      grid-gap: 10px;
+      padding: 10px;
+
+    }
+    .form-part{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 50vw;
+      grid-area: form;
+    }
+    .card-part{
+      display: flex;
+      /* flex-direction: row-reverse; */
+      align-items: center;
+      justify-content: center;
+      grid-area: card;
+      flex-wrap: wrap;
+      max-width: 50vw;
+      
+    }
+
+
+    @media only screen and (max-width: 990px){
+      .main{
+        display: block;
+        min-width: 50vw;
+        
+      }
+    }
+
+  </style>
+  <title>main-element</title>
+</head>
+
+<body>
+  
+  
+  
+ 
+  
+  
+  <main-element></main-element>
+
+  <script type="module" src="./src/main-element.js"></script>
+  
+</body>
+
+</html>
